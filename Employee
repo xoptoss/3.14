@@ -1,0 +1,46 @@
+package Main;
+
+public class Employee
+{
+	private String firstName;
+	private String lastName;
+	private Double monthlySalary;
+
+	public Employee(String first,String last, double salary)
+	{
+		firstName = first;
+		lastName = last;
+		monthlySalary = salary;
+	}
+	public void setFirstName( String first )
+	{
+		firstName = first;
+	}
+	public String getFirstName()
+	{
+		return firstName;
+	}
+	public void setLastName( String last )
+	{
+		lastName = last;
+	}
+	public String getLastName()
+	{
+		return lastName;
+	}
+	public void setMonthlySalary( Double salary )
+	{
+		monthlySalary = salary;
+	}
+	public double getMonthlySalary()
+	{
+		return monthlySalary;
+	}
+	public String toString()
+	{
+		return getFirstName() + " " + getLastName() +
+				"\nMonthly Salary: " + getMonthlySalary();
+	} 
+}
+
+
